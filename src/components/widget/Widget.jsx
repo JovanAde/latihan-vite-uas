@@ -1,9 +1,13 @@
-import React from "./widget.scss"
+import React from "./widget.scss";
 
 const Widget = () => {
   return (
-    <div>Widget</div>
-  )
-}
+    <div className="widget">
+    <div className="left">left</div>
+    <div className="right">right</div>
 
-export default Widget
+    </div>
+  );
+};
+
+export default Widget;
