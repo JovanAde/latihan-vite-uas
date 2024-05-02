@@ -6,6 +6,7 @@ import Inventory2Icon from '@mui/icons-material/Inventory2';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Sidebar = () => {
   return(
@@ -34,6 +35,12 @@ const Sidebar = () => {
             <li>
               <Inventory2Icon className="icon"/>
               <span>Products</span>
+            </li>
+          </Link>
+          <Link to="/categories"> {/* Tambahkan tautan menu ke halaman kategori */}
+            <li>
+              <CategoryIcon className="icon"/> {/* Tambahkan ikon kategori */}
+              <span>Categories</span> {/* Tambahkan teks kategori */}
             </li>
           </Link>
           <li>
