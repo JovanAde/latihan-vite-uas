@@ -1,4 +1,4 @@
-import MyDatatable from "../../components/datatable/MyDatatable";
+import MyDatatable from "../mydatatable/MyDatatable";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Widget from "../../components/widget/Widget";
