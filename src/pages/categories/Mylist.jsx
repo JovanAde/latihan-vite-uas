@@ -13,7 +13,8 @@ const Mylist = () => {
         <Navbar />
         <div className="widgets">
           <Widget type="user"/>
-          <Widget type="order"/>
+          <Widget type="product"/>
+          <Widget type="category"/>
         </div>
         <Mydatatable/>
       </div>

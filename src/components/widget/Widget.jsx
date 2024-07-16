@@ -35,12 +35,48 @@ const Widget = ({ type }) => {
       };
       break;
 
+    case "product":
+      data = {
+        title: "PRODUCTS",
+        isMoney: false,
+        link: "See all products",
+        query: "products",
+        icon: (
+          <PersonOutlinedIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "rgba(255, 0, 0, 0.2)",
+            }}
+          />
+        ),
+      };
+      break;
+
+    case "category":
+      data = {
+        title: "CATEGORIES",
+        isMoney: false,
+        link: "See all categories",
+        query: "categories",
+        icon: (
+          <PersonOutlinedIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "rgba(255, 0, 0, 0.2)",
+            }}
+          />
+        ),
+      };
+      break;
+
     case "order":
       data = {
         title: "ORDERS",
         isMoney: false,
         link: "View all orders",
-        query: "users",
+        query: "orders",
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
@@ -58,7 +94,7 @@ const Widget = ({ type }) => {
         title: "EARNINGS",
         isMoney: true,
         link: "View net earnings",
-        query: "users",
+        query: "earnings",
         icon: <MonetizationOnOutlinedIcon className="icon" style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }} />,
       };
       break;
@@ -68,7 +104,7 @@ const Widget = ({ type }) => {
         title: "BALANCE",
         isMoney: true,
         link: "See details",
-        query: "users",
+        query: "balancce",
         icon: (
           <AccountBalanceWalletOutlinedIcon
             className="icon"
